@@ -49,7 +49,7 @@ h1 {
 
 h2 {
     font-size: 40px;
-    padding-top: 60px;
+    line-height: 50px;
 }
 
 a:link, a:visited{
@@ -66,4 +66,14 @@ a:hover, a:active {
     background-color: white;
     color: rgb(1, 21, 83);
     cursor: url(orange.cur), auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+li {
+    padding: 5px;
 }
