@@ -1,3 +1,10 @@
+:root {
+    --bgcolor: rgb(161, 221, 255);
+    --btncolor: rgb(1, 21, 83);
+    --textcolor: rgb(1, 21, 83);
+    --btnaccent: white;
+}
+
 html:hover{
     cursor: url(skate.cur), auto;
 }
@@ -20,8 +27,8 @@ body {
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    background: rgb(161, 221, 255);
-    color: rgb(1, 21, 83);
+    background: var(--bgcolor);
+    color: var(--textcolor);
     line-height: 2;
 }
 
@@ -53,8 +60,8 @@ h2 {
 }
 
 a:link, a:visited{
-    background-color: rgb(1, 21, 83);
-    color:white;
+    background-color: var(--btncolor);
+    color:var(--btnaccent);
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -62,9 +69,25 @@ a:link, a:visited{
     border-radius: 20px;
 }
 
-a:hover, a:active {
-    background-color: white;
-    color: rgb(1, 21, 83);
+a:hover{
+    background-color: var(--btnaccent);
+    color: var(--btncolor);
+    cursor: url(orange.cur), auto;
+}
+
+button {
+    background:var(--btncolor);
+    border-radius: 40%;
+    border-style:solid;
+    border-color:var(--btncolor);
+    color:var(--btnaccent);
+    float: right;
+}
+
+button:hover {
+    background: var(--btnaccent);
+    color: var(--btncolor);
+    border-color: var(--btnaccent);
     cursor: url(orange.cur), auto;
 }
 
@@ -77,3 +100,4 @@ ul {
 li {
     padding: 5px;
 }
+
