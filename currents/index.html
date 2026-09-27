@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
+    <script>
+        if (localStorage.getItem('darkMode') === 'enabled'){
+            document.documentElement.style.setProperty('--bgcolor', 'black');
+            document.documentElement.style.setProperty('--btncolor','rgb(59, 59, 59)');
+            document.documentElement.style.setProperty('--textcolor', 'white');
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
     <head> <link rel="stylesheet" href="style.css"/> </head>
     <body>
         <div class = "column-container">
             <div class = "column">
                 <h1> currents </h1>
             </div>
-            <div class = "column right-column currents-text">
+            <div class = "column right-column">
                 <div class="navbar">
                     <ul>
                             <li> <a href="/"> intro </a></li>
                             <li> <a href="index.html"> currents </a></li>
                     </ul>
                 </div>
+                <p> <strong> artists: </strong> grentperez, blood orange, love spells, kali uchis, q marsden </p>
                 <p> <strong> songs: </strong> </p>
+                <p> <strong> movies: </strong> saving face, identity thief, project hail mary, mickey 17 </p>
+                <p> <strong> currently reading: </strong> entangled life by merlin sheldrake</p>
+                <p> <strong> favorite fruit: </strong> oranges </p>
             </div>
         </div>
         <div class = "btncontainer">
